@@ -4,3 +4,6 @@ all:
 
 check:
 	python setup.py test
+
+clean:
+	rm -rf dist build nltk_lsm.egg-info
