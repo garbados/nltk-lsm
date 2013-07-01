@@ -34,7 +34,7 @@ def log(*args, **kwargs):
         now = str(datetime.now()).split(' ')
         now.extend([str(item) for item in args])
         line = ' '.join(now)
-        f.write(line)
+        f.write(line+'\n')
         return line
 
 
