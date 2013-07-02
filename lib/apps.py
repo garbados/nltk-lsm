@@ -17,7 +17,6 @@ def _facebook(config, user1, user2):
     for user in [user1, user2]:
         response = graph.get_object('/'.join([user, "statuses"]), fields="message")
         statuses = '\n'.join([status['message'] for status in response['data']])
-        print statuses
         if statuses:
             results.append(statuses)
         else:
