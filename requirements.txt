@@ -1,6 +1,8 @@
 PyYAML==3.10
+facebook-sdk==0.4.0
 httplib2==0.8
 nltk==2.0.4
+nltk-lsm==0.0.1
 numpy==1.7.1
 oauth2==1.5.211
 python-twitter==1.0

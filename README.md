@@ -6,17 +6,15 @@ Language Style Matching (LSM), using the NLTK. LSM indicates the likeness of two
 
     git clone git@github.com:garbados/nltk-lsm.git
     cd nltk-lsm
-    virtualenv venv
-    source venv/bin/activate
-    make
+    sudo make # to install globally
 
-At this time it is unclear how to install globally. Attempting `sudo make` outside the virtualenv yields a SandboxError.
+`nltk-lsm` exposes itself to global uses by aliasing itself in a profile. If your machine doesn't do UNIX-ish aliasing, or doesn't user `~/.bashrc` for profiles, edit `Makefile` accordingly.
 
 ## Usage
 
 From command line, running...
 
-    python -m lib [service] [user1] [user2]
+    nltk-lsm [service] [user1] [user2]
 
 ...will yield this:
 
